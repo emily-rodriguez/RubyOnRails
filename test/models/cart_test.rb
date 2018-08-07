@@ -16,7 +16,7 @@ class CartTest < ActiveSupport::TestCase
     ruby_book = products(:ruby)
     cart.add_product(ruby_book).save!
     cart.add_product(ruby_book).save!
-    assert_equal 2*book_one.price, cart.total_price
+    assert_equal 2*ruby_book.price, cart.total_price
     assert_equal 1, cart.line_items.size
     assert_equal 2, cart.line_items[0].quantity
   end
