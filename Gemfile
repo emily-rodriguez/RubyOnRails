@@ -59,3 +59,7 @@ gem 'activemodel-serializers-xml', git: 'https://github.com/rails/activemodel-se
 gem 'draper'
 
 gem 'i18n-js'
+
+group :production do
+  gem 'pg'
+end
