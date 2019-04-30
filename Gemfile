@@ -61,6 +61,8 @@ gem 'draper'
 
 gem 'i18n-js'
 
+gem "interactor-rails", "~> 2.2"
+
 group :production do
   gem 'pg'
 end
